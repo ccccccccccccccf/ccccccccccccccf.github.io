@@ -53,7 +53,7 @@ nav.greybox{
     animation: scroll-left 10s linear infinite; 
     font-family: Unifont, sans-serif;
     color:black;
-    cursor: no-drop;
+    cursor:no-drop;
 }
 .filldarkgrey:hover .troll {
     animation-play-state: paused;
