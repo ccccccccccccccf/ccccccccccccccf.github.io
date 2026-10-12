@@ -129,7 +129,7 @@ nav.greybox{
     bottom:0;
     transition:0.3s;
 }
-.funnyc:hover:before{
+.funnyc:hover::before{
     bottom:20px;
     cursor:vertical-text;
 }
@@ -148,7 +148,7 @@ nav.greybox{
 .funny1:hover::before{
     top:100px;
 }
-.funny1:hover:after{
+.funny1:hover::after{
     left:100px;
 }
 p{color:rgb(239, 0, 0);}
