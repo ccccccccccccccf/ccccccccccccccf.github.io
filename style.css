@@ -14,7 +14,7 @@
 .icon{
     width:90px;
     height:90px;
-    margin: 20px 0xp 0px 20px;
+    margin: 20px 0px 0px 20px;
 }
 nav{
     display:flex;
@@ -26,6 +26,7 @@ nav{
 }
 nav img{
     width:150px;
+    
 }
 .nav-link{
     flex:1;
