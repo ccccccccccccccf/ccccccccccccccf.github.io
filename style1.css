@@ -20,23 +20,24 @@ header.head nav{
 }
 nav.greybox{
     flex:3;
-    display:inline-grid;
+    display:inline-flex;
     flex-direction:column;
     max-width:fit-content;
     height:100%;
 }
 .fillcbcbcb{
-    /*flex:1;*/
+    flex:1;
     display:flex;
     flex-direction:column;
     background-color: #cbcbcb;
     padding:0 5px 0 5px;
     width:fit-content;
     align-items:center;
+    
 }
 
 .filldarkgrey{
-    /*flex:1;*/
+    flex:1;
     width:0;
     min-width:100%;
     background-color: #c0c0c0;  
@@ -66,7 +67,7 @@ nav.fillhyperblue{
     background-color: #0000a0;
 }
 .head img{
-    flex:0,0,0;
+    flex:0 0 auto;
 }
 .collapseimg{
     position: absolute;
@@ -81,7 +82,7 @@ nav.fillhyperblue{
 }
 .oldui2{
     border: solid #b8b8b8;
-    border-thickness:3px 2px 2px 3px;
+    border-width:3px 2px 2px 3px;
     padding:2px 3px 3px 2px;
     box-shadow: inset 2px 2px 0px #333333, inset -3px -3px 0px #e9e9e9;
     border-radius: 0px;
@@ -100,6 +101,7 @@ nav.fillhyperblue{
     transform: translateX(0);  
     transition: 4s ease-in;
     z-index: 2;
+
 }
 .secretimg1{
     padding: 5px 1px 1px 5px;
