@@ -10,7 +10,83 @@
     background-color: #00a824;
     padding:0 30px 0 30px;
 }
-.main{
+header.head{
+    display: flex;
+    width: 100%;
+    height: 100px; 
+}
+header.head nav{
+    flex:1;
+}
+nav.greybox{
+    flex:3;
+    display:inline-grid;
+    flex-direction:column;
+    max-width:fit-content;
+    height:100%;
+}
+.fillcbcbcb{
+    /*flex:1;*/
+    display:flex;
+    flex-direction:column;
+    background-color: #cbcbcb;
+    padding:0 5px 0 5px;
+    width:fit-content;
+    align-items:center;
+}
+
+.filldarkgrey{
+    /*flex:1;*/
+    width:0;
+    min-width:100%;
+    background-color: #c0c0c0;  
+    white-space: nowrap;  
+    overflow-y: hidden;
+    display:flex;
+    align-items:center;
+}
+.filldarkgrey::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+}
+.troll{
+    display: inline-block;
+    animation: scroll-left 10s linear infinite; 
+}
+.filldarkgrey:hover .troll {
+    animation-play-state: paused;
+}
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+nav.fillhyperblue{
+    flex:7;
+    background-color: #0000a0;
+}
+.head img{
+    flex:0,0,0;
+}
+.collapseimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.oldui1{
+    border: 5px solid;
+    border-color:#e0e0e0  #363636 #363636 #e0e0e0;
+    border-radius: 0px;
+}
+.oldui2{
+    border: solid #b8b8b8;
+    border-thickness:3px 2px 2px 3px;
+    padding:2px 3px 3px 2px;
+    box-shadow: inset 2px 2px 0px #333333, inset -3px -3px 0px #e9e9e9;
+    border-radius: 0px;
+}
+.mainbd{
     display:inline-block;
     width: 100%;
     min-height: 100vh;
@@ -19,4 +95,22 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-p{color:white;}
+.hmm{
+    position:relative;
+    transform: translateX(0);  
+    transition: 4s ease-in;
+    z-index: 2;
+}
+.secretimg1{
+    padding: 5px 1px 1px 5px;
+
+    width:88px;
+    height: 88px;
+    z-index: 1;
+    cursor:wait;
+}
+.hmm.move{
+    transform: translateX(-88px);
+    cursor:s-resize; 
+}
+p{color:rgb(239, 0, 0);}
