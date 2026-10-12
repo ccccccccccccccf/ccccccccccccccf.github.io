@@ -15,9 +15,6 @@ header.head{
     width: 100%;
     height: 100px; 
 }
-header.head nav{
-    flex:1;
-}
 nav.greybox{
     flex:3;
     display:inline-flex;
@@ -30,7 +27,7 @@ nav.greybox{
     display:flex;
     flex-direction:column;
     background-color: #cbcbcb;
-    padding:0 5px 0 5px;
+    
     width:fit-content;
     align-items:center;
     
@@ -49,10 +46,14 @@ nav.greybox{
 .filldarkgrey::-webkit-scrollbar {
     width: 0px;
     display: none;
+    
 }
 .troll{
     display: inline-block;
     animation: scroll-left 10s linear infinite; 
+    font-family: Unifont, sans-serif;
+    color:black;
+    cursor: wait;
 }
 .filldarkgrey:hover .troll {
     animation-play-state: paused;
@@ -62,7 +63,7 @@ nav.greybox{
     100% { transform: translateX(-50%); }
 }
 
-nav.fillhyperblue{
+.fillhyperblue{
     flex:7;
     background-color: #0000a0;
 }
@@ -99,8 +100,11 @@ nav.fillhyperblue{
 .hmm{
     position:relative;
     transform: translateX(0);  
-    transition: 4s ease-in;
+    transition: 10s ease-in;
     z-index: 2;
+    padding:0px 0 0 0;
+    height:90px;
+    cursor:help;
 
 }
 .secretimg1{
@@ -114,5 +118,37 @@ nav.fillhyperblue{
 .hmm.move{
     transform: translateX(-88px);
     cursor:s-resize; 
+}
+.funny1{
+    font-family: 'Press Start 2P', Impact, sans-serif;
+    cursor:alias;
+}
+.funnyc::before{
+    content:"c";
+    position:relative;
+    bottom:0;
+    transition:0.3s;
+}
+.funnyc:hover:before{
+    bottom:20px;
+    cursor:vertical-text;
+}
+.funny1::before{
+    content:"Cogito,";
+    position:relative;
+    top:0;
+    transition:0.3s;
+}
+.funny1::after{
+    content:" ergo sum";
+    position:relative;
+    left:0;
+    transition:0.3s;
+}
+.funny1:hover::before{
+    top:100px;
+}
+.funny1:hover:after{
+    left:100px;
 }
 p{color:rgb(239, 0, 0);}
