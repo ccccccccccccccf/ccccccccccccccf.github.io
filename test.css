@@ -1,0 +1,3 @@
+const sot= Date.getTime();
+let year= sot/365*24*60*60*1000+1970;
+console.log(year);
