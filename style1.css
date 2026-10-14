@@ -144,7 +144,7 @@ nav.greybox{
     align-items: center;
     padding:0 3px 0 3px;
     display:flex;
-    border:1px solid green;
+    border:0px solid green;
     max-width:fit-content;
 }
 .bluebannerimg{
@@ -179,7 +179,7 @@ nav.greybox{
     display:block;
     height:80%;
     flex:1;
-    border:1px solid red;
+    border:0px solid red;
     align-items: center;
 }
 .hmm.move{
