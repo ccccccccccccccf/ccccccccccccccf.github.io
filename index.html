@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Press+Start+2P|Alfa+Slab+One&effect=3d|3d-float|fire|fire-animation|shadow-multiple|anaglyph">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Press+Start+2P|Alfa+Slab+One|Jacquarda+Bastarda+9+Charted&effect=3d|3d-float|fire|fire-animation|shadow-multiple|anaglyph">
     <link rel="stylesheet" href="style1.css">
     <link href="https://cdn.jsdelivr.net/npm/@fontsource/unifont@5.3.0/index.min.css" rel="stylesheet">
 </head>
@@ -14,9 +14,9 @@
     <section class="realbg">
         <section class="oldui1">
             <header class="head">
-                <nav class="oldui2" style="max-width: fit-content;flex:1;position:relative;background-color: red;">
+                <nav class="oldui2" style="max-width: fit-content;flex:1;position:relative;background-color: rgb(0, 255, 0);">
                     <img class="hmm" src="image/unnamed.webp" alt="Placeholder2 for unload image lmao" width="89" height="89">
-                    <a href="index2.html"><img class="secretimg1 collapseimg" src="image/2a.webp" alt="Placeholder3 for unload image lmao" width="89" height="89"></a>
+                    <a href="index2.html"><img class="secretimg1 collapseimg" src="image/fire.png" alt="Placeholder3 for unload image lmao" width="89" height="89"></a>
                 </nav>
                 <nav class="greybox">
                     <div class="fillcbcbcb" style="padding:0 5px 0 5px;">
@@ -36,7 +36,7 @@
                                 <span class="funnyc"></span>
                                 <span class="funnyc"></span>
                                 <span class="funnyc"></span>f</h1>
-                            <img style="cursor:wait;" src="image/corrupticon1.png" alt="Placeholder3 for unload image lmao" width="30" height="30">
+                            <img class="trigger1" style="cursor:wait;" src="image/corrupticon1.png" alt="Placeholder3 for unload image lmao" width="30" height="30">
                         </div>
                         <p style="width: 100%;" class="funny1"></p>
                     </div>
@@ -49,8 +49,8 @@
                     </div>
                 </nav>
                 <nav style="flex:7;display:flex;flex-direction: column;">
-                    <header class="fillhyperblue oldui2">
-                        <div class="bluebanner" style="">
+                    <header class="fillhyperblue oldui2" style="height:50%;">
+                        <div class="bluebanner" style="font-family:W95;">
                             <pre>My </pre>
                             <div class="temp1">
                                 <div class="funny2">
@@ -63,7 +63,7 @@
                                     <p>browser</p><p>html</p> <p>test</p> <p>browser</p><p>html</p> <p>test</p>
                                 </div>
                             </div>
-                            <pre style="font-family:W95;"> page</pre>
+                            <pre style="font-family:W95;text-decoration: underline;"> page</pre>
                         </div>
                         <canvas id="test1" class="test1"></canvas>
                         <img src="image/w95_.png" class="bluebannerimg" >
@@ -72,11 +72,29 @@
                     </header>
                     <nav class="fillcbcbcb" style="display:flex;flex-direction: row;min-width:100%;align-items: center;">
                         <img class="oldui2 icon" style="flex:0 0 auto;" src="image/2a.webp">
-                        <p class="secondgreybarword oldbut1">abcdefg</p>
+                        <p class="secondgreybarword" id="rand1">NOT</p>
                         <div class="spbar" style="flex:1;"></div>
-                        <p class="secondgreybarword">abcdefg</p>
+                        <p class="secondgreybarword">A TEXT!</p>
                         <div class="spbar" style="flex:1;"></div>
-                        <p class="secondgreybarword">abcdefg</p>
+                        <div style="position: relative;display: inline-block;">
+                            <p class="secondgreybarword" id="Help1" style="cursor:grabbing;">RUN!!</p>
+                            <div class="fuitest hidetest oldbut1 fillcbcbcb" id="toggle1">
+                                <div style="display:flex;flex-direction: column;min-width:max-content;">
+                                    <div class="fillhyperblue" style="padding:3px;align-items: center;">
+                                        <img style="flex:0 0 auto;height:15px;" id="cimg1">
+                                        <p class="bluebanner" style="font-family: 'W95';font-style: oblique;">Error</p>
+                                        <img style="flex:0 0 auto;height:15px;" src="image/icon/W95!.png">
+                                        <div id="dupe1" style="align-items: center;display:flex;"></div>
+                                    </div>
+                                    <div class="oldui2 fakesky" style="width:0;min-width:100%;">
+                                        <p class="tim"  style="margin:0 0 18px 0;overflow-x:hidden;white-space: nowrap;">Tuesday is missing Tuesday is missing Tuesday is missing Tuesday is missing Tuesday is missing Tuesday is missing Tuesday is missing Tuesday is missing Tuesday is missing Tuesday is missing </p>
+                                        <p class="oldbut1 st1" id="Close1">Find Tuesday</p>
+                                        <p style="z-index: 11;color:aqua;text-align: right;font-family:Courier New;">   Hello?</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                         <div style="flex:1"></div>
                         <img class="oldui2 icon" style="flex:0 0 auto;" src="image/minecraft.png" >
                         <img class="oldui2 icon" style="flex:0 0 auto;transform:translate(0,0) rotate(5deg);" src="image/minecraft.png">
@@ -107,5 +125,16 @@
     </section>
     <script src="moveicon.js"></script>
     <script src="test.js"></script>
+    <script>
+        let list01 = ["File","Edit", "View", "Favourite", "Help", "Incur", "He is coming"];
+        let listselector01=[list01, cBin];
+        if (Math.random()>0.99){
+            document.getElementById("rand1").innerHTML = cBin[Math.floor(Math.random() * cBin.length)];
+        } else{
+            document.getElementById("rand1").innerHTML = list01[Math.floor(Math.random() * 5)];
+        }
+        document.getElementById("Help1").innerHTML = 'Calendar'
+        console.log(Math.random());
+    </script>
 </body>
 </html>

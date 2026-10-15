@@ -10,7 +10,7 @@ if (min.length==1){
     min="0"+min;
 }
 if (sec.length==1){
-    se ="0"+sec;
+    sec ="0"+sec;
 }
 if (hr.length==1){
     hr="0"+String(hr);
@@ -194,7 +194,7 @@ const canvas1 = document.getElementById("test1");
 const ctx1 = canvas1.getContext("2d");
 const canvas2 = document.getElementById("test2");
 const ctx2 = canvas2.getContext("2d");
-let w = 1;
+let w = 3;
 let h=300;
 function draw(){
     ctx1.fillStyle="white";

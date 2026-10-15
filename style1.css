@@ -82,7 +82,6 @@ nav.greybox{
     display:flex;
     background-color: #0000a0;
     align-items: center;
-    height:50%;
 }
 .fillhyperblue.oldui2{
     padding: 3px 5px 4px 5px;
@@ -136,7 +135,6 @@ nav.greybox{
     cursor:wait;
 }
 .bluebanner{
-    font-family: 'W95';
     font-size:150%;
     color:white;
     flex:1;
@@ -157,6 +155,37 @@ nav.greybox{
 .bluebanner pre{
     font-family:W95;
 }
+.tim{
+    text-wrap: none;
+    padding:5px 15px 5px 2px;
+    font-family:'Zapfino';
+    font-size:200%;
+    text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff,   0 0 0.25em #fffce0,
+  0 0 0.35em #fff59a,
+  0 0 0.55em #ffe000,
+  0 0 0.85em #ffd000,
+  0 0 1.20em #ffc400;
+    color: #fff;
+}
+.st1{
+    padding:0 8px 2px 8px;
+    font-family:sans-serif;
+    transform: scaleY(2);
+    margin:0 0 10px 0;
+    display: block;
+    width: max-content;
+    align-self: center;
+    color: #ff4141;
+    background-color: rgba(203,203,203,0.7);
+    
+}
+.fakesky{
+    display: flex;
+    flex-direction:column;
+    background-image: linear-gradient(rgba(144, 144, 144, 0.3), rgba(144, 144, 144, 0.3)), url('image/fakesky.jpg');
+    background-repeat: repeat-x;
+    background-size: auto 100%;   
+}
 .spbar{
     border: 1px solid #a1a1a1;
     height:80%;
@@ -164,15 +193,16 @@ nav.greybox{
 }
 .secondgreybarword{
     font-family:W95;
-    padding:0 3px 0 3px;
+    padding:0 5px 0 5px;
     flex:1;
     max-width:fit-content;
+    font-size:130%;
 }
 .oldbut1{
-    border:2px solid;
-    border-color: white #333333 #333333 white;
-    padding: 2px;
-    box-shadow: inset 2px 2px 0px #e9e9e9, inset -3px -3px 0px black;
+    border: solid;
+    border-width:2px 1.5px 1.5px 2px;
+    border-color: #ffffff #333333 #333333 #e0e0e0;
+    box-shadow: inset -2px -2px 0px rgb(128, 128, 128), inset 1.5px 1.5px 0px #bcbcbc;
     border-radius: 0px;
 }
 .test1{
@@ -258,3 +288,20 @@ nav.greybox{
     left:100px;
 }
 /*p{color:rgb(239, 0, 0);}*/
+.fuitest{
+    font-family:W95;
+    cursor:help;
+    position: absolute;
+    top: 130%;
+    left: -30%;
+    z-index: 1000;
+    min-width:max-content;
+    padding: 4px;
+    /*box-shadow: 0 2px 8px rgba(0,0,0,0.2);*/
+}
+.fuitest.zapfino{
+    font-style:'Zapfino';
+}
+.fuitest.hidetest{
+    display: none;
+  }
