@@ -194,7 +194,7 @@ const canvas1 = document.getElementById("test1");
 const ctx1 = canvas1.getContext("2d");
 const canvas2 = document.getElementById("test2");
 const ctx2 = canvas2.getContext("2d");
-let w = 3;
+let w = 1;
 let h=300;
 function draw(){
     ctx1.fillStyle="white";
@@ -207,14 +207,14 @@ function draw(){
         a+=1;
     }
 }
-function resize() {
-    const rect2 = canvas2.parentElement.getBoundingClientRect();
-    const rect1 = canvas1.parentElement.getBoundingClientRect();
-    canvas2.width  = rect2.width;   
-    canvas1.width  = rect1.width;   
+draw()
+//function resize() {
+    //const rect2 = canvas2.parentElement.getBoundingClientRect();
+    //const rect1 = canvas1.parentElement.getBoundingClientRect();
+    //canvas2.width  = rect2.width;   
+    //anvas1.width  = rect1.width;   
     //canvas.height = 80;
-    draw();
-}
-resize();
+    //draw();}
+//resize();
 //setInterval(resize(),1000);
 //window.addEventListener("resize", resize);
