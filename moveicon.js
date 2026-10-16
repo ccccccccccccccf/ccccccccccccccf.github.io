@@ -8,8 +8,8 @@ const dupe1 = document.getElementById('dupe1');
 const btn3 = document.getElementById('displacement1');
 
 
-let count1=0
-let count2=0
+let count1=0;
+let count2=0;
 btn1.addEventListener('click', () => {
     tg1.classList.toggle('hidetest');
     count1=(count1+1)%2;
