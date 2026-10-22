@@ -21,7 +21,13 @@ if (month.length==1){
 if (d.length==1){
     d="0"+d;
 }
-const pre = `${year}-${month}-${d} ${hr}:${min}:${sec}`
+let pre = `${year}-${month}-${d} ${hr}:${min}:${sec} `;
+list0 = ["ad-lib", "paradigm", "reminiscence", "dream", "wake up", "bpemr", "nocturne", "cafe-de-coral", "erika", "minecampf", "meinkraft", "alt-f4", "ctrl-alt-tab", "left-to-right", "einfach-lustig", "petard-be-hoist", "cogito-ergo-sum", "test1"];
+list64 = ["110100100001001110011011001001110100001011001011000010010011100110101100001001001100111011000111010110000000000","10010110000100100001101101100110010011110010110000101001000010011011011001100110111101101001111001011011001100110000101001000011010010000101100100110000101001111010011011001100111101001001000111101011000010100110110011001100101000010000110100110000101001100001001010111100100", "01111011011011110010010111100100101001111001001000011010011001101101111001001000010011010110010000100110011011000010011010110000100100001001101001011000010000101001100110011011010000110010011010000101000100011"];
+pre = pre+list0[Math.floor(Math.random()*(list0.length+1))];
+if (Math.random()>=0.99){
+    pre = list64[Math.floor(Math.random()*(list64.length+0.1))];
+}
 let list1 = [...pre];
 //104 initial value
 let testvalue= 104;
@@ -194,11 +200,16 @@ const canvas1 = document.getElementById("test1");
 const ctx1 = canvas1.getContext("2d");
 const canvas2 = document.getElementById("test2");
 const ctx2 = canvas2.getContext("2d");
-let w = 1;
+let w = 3;
+console.log(list3.length);
+console.log(pre.length);
+canvas1.width=(output1.length+10)*w;
+canvas2.width=(output1.length+10)*w;
+
 let h=300;
 function draw(){
     ctx1.fillStyle="white";
-    ctx2.fillStyle="white";
+    ctx2.fillStyle="black";
     while (a<output1.length){
         if (output1[a]==1){
             ctx1.fillRect((10+a)*w, 0, w, h);
