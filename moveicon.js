@@ -92,10 +92,10 @@ btn4.addEventListener('click', () => {
             leftmostpx1=boxx.left;
             rightmostpx1=boxx.right;
             rightmarginpx1 = rightmargin.width;
-            console.log(rightmarginpx1)
+            console.log(rightmarginpx1);
             /*leftmostpx2=boxxx.left;
             rightmostpx2=boxxx.right;*/
-        break}
+        break;}
     }
 });
 /*btn4.addEventListener('mouseenter', () => {
