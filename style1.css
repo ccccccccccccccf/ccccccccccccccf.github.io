@@ -314,6 +314,27 @@ nav.greybox{
     transition: 0.3s;
     transform:translate(0,0) rotate(0deg);
 }
+.rand1ui{
+    font-family:W95;
+    cursor:text;
+    position: absolute;
+    top: 13%;
+    left: 25%;
+    z-index: 999;
+    min-width:max-content;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display:flex;
+    flex-direction: column;
+}
+.rand1ui.rand1uitg{
+    display: none;
+}
+.movewithmouseclass{
+    width:auto;
+    height:100%;
+    position:relative;
+    object-fit: contain;
+}
 /*.box1.trans{
     transform:translate(0,0) rotate(5deg);
 }

@@ -181,12 +181,12 @@ const cBin = [
 for (const [i,x] of list1.entries()){
     testvalue += (i+1)*cbig[x];
     list2.push(cbig[x]);
-    console.log(i+1);
+    /*console.log(i+1);*/
 }
 testvalue = testvalue%103;
 list2.push(testvalue);
 //list2.push(106);
-console.log(list2);
+//console.log(list2);
 for (const y of list2){
     list3.push(cBin[y]);
 }
@@ -201,8 +201,8 @@ const ctx1 = canvas1.getContext("2d");
 const canvas2 = document.getElementById("test2");
 const ctx2 = canvas2.getContext("2d");
 let w = 3;
-console.log(list3.length);
-console.log(pre.length);
+/*console.log(list3.length);
+console.log(pre.length);*/
 canvas1.width=(output1.length+10)*w;
 canvas2.width=(output1.length+10)*w;
 

@@ -6,10 +6,28 @@ const tg1 = document.getElementById('toggle1');
 const cimg1 = document.getElementById('cimg1');
 const dupe1 = document.getElementById('dupe1');
 const btn3 = document.getElementById('displacement1');
+const btn4 = document.getElementById('rand1');
+const btn5 = document.getElementById('textclosebut');
+const rand1uitgconst = document.getElementById('rand1uitgid');
+const btn5box = document.getElementById('textclosebutbox');
+
 
 
 let count1=0;
 let count2=0;
+let countrand1UI=0;
+let leftmostpx1  = 0;
+let rightmostpx1 = 0;
+let rightmarginpx1 = 0;
+document.addEventListener('mousemove', (event) => {
+    if (countrand1UI==1){
+        let cursorX = event.clientX;
+        //let leftmostpx1=btn5box.getBoundingClientRect().left;
+        //let rightmostpx1=btn5box.getBoundingClientRect().right;
+        document.querySelectorAll('.movewithmouseclass').forEach(el=>{
+            el.style.transform =`translateX(${Math.min(rightmostpx1-rightmarginpx1-3,Math.max(leftmostpx1, cursorX))-leftmostpx1}px)`;
+        });}
+});
 btn1.addEventListener('click', () => {
     tg1.classList.toggle('hidetest');
     count1=(count1+1)%2;
@@ -61,7 +79,37 @@ btn3.addEventListener('click', () => {
         }}
     );
 });
-
+btn4.addEventListener('click', () => {
+    rand1uitgconst.classList.toggle('rand1uitg');
+    countrand1UI=(countrand1UI+1)%2;
+    //let leftmostpx1=btn5.parentElement.getBoundingClientRect().left;
+    //let rightmostpx1=btn5.parentElement.getBoundingClientRect().right;
+    while (1==1){
+        console.log("time");
+        if (btn5 || btn5.parentElement){
+            const boxx = btn5.parentElement.getBoundingClientRect();
+            const rightmargin = btn5.getBoundingClientRect();
+            leftmostpx1=boxx.left;
+            rightmostpx1=boxx.right;
+            rightmarginpx1 = rightmargin.width;
+            console.log(rightmarginpx1)
+            /*leftmostpx2=boxxx.left;
+            rightmostpx2=boxxx.right;*/
+        break}
+    }
+});
+/*btn4.addEventListener('mouseenter', () => {
+    if (1==1){
+        if (!btn5 || !btn5.parentElement) return;
+        const boxx = btn5.parentElement.getBoundingClientRect();
+        leftmostpx1=boxx.left;
+        rightmostpx1=boxx.right;
+    }
+});*/
+btn5.addEventListener('click', () => {
+    rand1uitgconst.classList.toggle('rand1uitg');
+    countrand1UI=(countrand1UI+1)%2;
+});
 invbox1.addEventListener('mouseenter', () => {
     hmm.classList.add('move');
 });
@@ -81,6 +129,7 @@ function mgif(listx, id){
 }
 const gimg1 = mgif(list001, cimg1);
 setInterval(gimg1, 1000);
+//setInterval(()=>movewithcursor(btn5,leftmostpx1,rightmostpx1),1000);
 setInterval(()=>{
     if (count1==0) {
         document.querySelectorAll('.temp001').forEach(el=>el.remove());
